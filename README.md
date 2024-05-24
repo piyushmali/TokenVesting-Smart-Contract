@@ -56,7 +56,38 @@ tokenVesting.addBeneficiary(address(0x789...), TokenVesting.Role.Team, 25000);
 
 // Simulate time and claim tokens
 // ...
+```
 
+## Remix Output Examples
+
+### Vesting Start
+
+```
+Vesting process initiated. Start timestamp: 1626274200
+```
+
+### Beneficiary Addition
+
+```
+Beneficiary added: Alice (User) - Allocated tokens: 50000
+Beneficiary added: Bob (Partner) - Allocated tokens: 25000
+Beneficiary added: Charlie (Team) - Allocated tokens: 25000
+```
+
+### Token Claiming
+
+```
+Alice claimed 25000 tokens after 1 year.
+Bob claimed 6250 tokens after 2 months.
+Charlie claimed 6250 tokens after 2 months.
+```
+
+### Events
+
+```
+VestingStarted event emitted.
+BeneficiaryAdded events emitted.
+TokensWithdrawn events emitted.
 ```
 
 ## License
